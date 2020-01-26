@@ -1,0 +1,137 @@
+.section{
+    padding: 70px 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.section-with-space{
+    padding: 60px 0;
+}
+.section-gray{
+    background-color: #EEEEEE;
+}
+.section-nude{
+    background-color: $bg-nude;
+}
+.section-gold{
+    background-color: #ce9e72;
+    color: $white-color;
+}
+.section-brown{
+    background-color: #A59E94;
+    color: $white-color;
+}
+.section-light-blue{
+    background-color: $primary-color;
+    color: $white-color;
+}
+.section-dark-blue{
+    background-color: #6c6d91;
+    color: $white-color;
+}
+.section-dark{
+    background-color: #0b1011;
+}
+.section-image,
+.section-gold,
+.section-dark{
+    position: relative;
+
+    .title,
+    .info-title,
+    .card-plain .card-title{
+        color: $white-color !important;
+    }
+    .category,
+    .description,
+    .card-plain .card-description,
+    .card-plain .card-category{
+        color: rgba($white-color, .7);
+    }
+    hr{
+        border-color: rgba(255, 255, 255, 0.19);
+    }
+}
+.separator{
+    background-color: $white-color;
+}
+.section-story-overview{
+    padding: 50px 0;
+
+    .image-container{
+        height: 335px;
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        border-radius: .25rem;
+
+        & + .category{
+            padding-top: 15px;
+        }
+
+        &.image-right{
+            z-index: 2;
+
+            + h3.title{
+                margin-top: 120px;
+            }
+        }
+
+        &.image-left{
+            z-index: 1;
+        }
+
+        &:nth-child(2){
+            margin-top: 420px;
+            margin-left: -105px;
+        }
+    }
+
+    p.blockquote{
+        width: 220px;
+        min-height: 180px;
+        text-align: left;
+        position: absolute;
+        top: 376px;
+        right: 155px;
+        z-index: 0;
+    }
+}
+.page-header,
+.carousel-caption{
+    .title,
+    .info-title{
+        color: $white-color;
+    }
+}
+[class*="features-"],
+[class*="team-"],
+[class*="projects-"],
+[class*="pricing-"],
+[class*="testimonials-"],
+[class*="contactus-"]{
+    padding: 80px 0;
+}
+.section-image{
+    background-position: center center;
+    background-size: cover;
+
+    &:before{
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    & .container{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.section-login{
+    min-height: 700px;
+}
